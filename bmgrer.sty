@@ -2,8 +2,8 @@
 %%
 %%  bmgrer.sty
 %%
-%%  $Revision: 1.3 $
-%%      $Date: 1994/11/14 11:30:24 $
+%%  $Revision: 1.4 $
+%%	$Date: 2000/01/28 10:45:02 $
 %%   $RCSfile: bmgrer.sty,v $
 %%
 %%  (c) 1994 by M G Berberich / FORWISS
@@ -11,7 +11,7 @@
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{bmgrer}[1994/11/11]
+\ProvidesPackage{bmgrer}[1994/11/11 (c)1994 by M G Berberich]
 \input{bmgrer.fd}
 
 \DeclareSymbolFont{bmgrer}{U}{bmgrer}{m}{n}
@@ -22,12 +22,14 @@
 \DeclareMathSymbol\setK			{\mathalpha}{bmgrer}{"4B}
 \DeclareMathSymbol\setN			{\mathalpha}{bmgrer}{"4E}
 \DeclareMathSymbol\setO			{\mathalpha}{bmgrer}{"4F}
+\DeclareMathSymbol\setP			{\mathalpha}{bmgrer}{"50}
 \DeclareMathSymbol\setQ			{\mathalpha}{bmgrer}{"51}
 \DeclareMathSymbol\setR			{\mathalpha}{bmgrer}{"52}
 \DeclareMathSymbol\setT			{\mathalpha}{bmgrer}{"54}
 \DeclareMathSymbol\setU			{\mathalpha}{bmgrer}{"55} 
 \DeclareMathSymbol\setZ			{\mathalpha}{bmgrer}{"5A}
-\DeclareMathSymbol\checkmark	{\mathord}{bmgrer}{"19}
+\@ifundefined{checkmark}{
+\DeclareMathSymbol\checkmark	{\mathord}{bmgrer}{"19}}{}
 \DeclareMathSymbol\contra		{\mathord}{bmgrer}{"1A}
 \DeclareMathSymbol\proofend		{\mathord}{bmgrer}{"1B}
 \global\let\angle\undefined

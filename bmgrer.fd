@@ -1,0 +1,20 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  bmgrer.fd
+%%
+%%  $revision:$
+%%      $date:$
+%%   $rcsfile:$
+%%
+%%  (c) 1994 by M G Berberich / FORWISS
+%%  berberic@forwiss.uni-passau.de
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesFile{bmgrer.fd}[1994/11/11]
+
+\DeclareFontFamily{U}{bmgrer}{}
+\DeclareFontShape{U}{bmgrer}{m}{n}{%
+	<5> <6> <7> <8> <9> <10> <12> gen * bmgrer
+	<10.95> bmgrer10
+	<14.4> <17.28> <20.74> <24.88> bmgrer12}{}
+\endinput

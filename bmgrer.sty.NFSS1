@@ -1,0 +1,44 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  bmgrer.sty
+%%
+%%  (c) 1994 by M G Berberich / FORWISS
+%%  berberic@forwiss.uni-passau.de
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\typeout{bmgrer.sty (c)1994 by M G Berberich}
+\new@mathgroup\bmgrerfam
+\define@mathgroup\mv@normal\bmgrerfam{bmgrer}{m}{n}
+\new@fontshape{bmgrer}{m}{n}%
+	{<5>bmgrer5%
+	 <6>bmgrer6%
+	 <7>bmgrer7%
+	 <8>bmgrer8%
+	 <9>bmgrer9%
+	 <10>bmgrer10%
+	 <11>bmgrer10 at 10.95pt%
+	 <12>bmgrer12%
+	 <14>bmgrer12 at 14.4pt%
+	 <17>bmgrer12 at 17.28pt%
+	 <20>bmgrer12 at20.736pt%
+	 <25>bmgrer12 at24.8832pt}{}
+\extra@def{bmgrer}{}{}
+
+\edef\@tempa{\hexnumber@\bmgrerfam}
+\mathchardef\setC="7\@tempa 43
+\mathchardef\setE="7\@tempa 45
+\mathchardef\setG="7\@tempa 47
+\mathchardef\setK="7\@tempa 4B
+\mathchardef\setN="7\@tempa 4E
+\mathchardef\setO="7\@tempa 4F
+\mathchardef\setQ="7\@tempa 51
+\mathchardef\setR="7\@tempa 52
+\mathchardef\setT="7\@tempa 54
+\mathchardef\setU="7\@tempa 55 
+\mathchardef\setZ="7\@tempa 5A
+\mathchardef\checkmark="0\@tempa 19
+\mathchardef\contra="0\@tempa 1A
+\mathchardef\proofend="0\@tempa 1B
+\mathchardef\angle="0\@tempa 1C
+\mathchardef\male="0\@tempa 1D
+\mathchardef\female="0\@tempa 1E
